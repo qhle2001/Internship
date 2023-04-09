@@ -1,0 +1,22 @@
+xác thực tài khoản người dùng
+quản lý thông tin cá nhân của người dùng đang đăng nhập
+đặt lịch và theo dõi các lịch viếng thăm
+quản lý công việc
+quản lý và thực hiện các bài khảo sát theo yêu cầu
+quản lý các thông báo
+quản lý các bài viết nổi bật từ hệ thống cms
+quản lý danh sách người dùng trong hệ thống
+quản lý các cấu hình và phân quyền sử dụng cho người dùng
+quản lý danh sách vùng và danh xách nhà phần phối trong hệ thống
+* đăng nhập: tên đăng nhập (email), mật khẩu
+* người dùng: tên, vai trò, vùng, ngày tham gia
+* hệ thống: lịch viếng thăm, công việc, thông báo, thông tin người dùng
+* quản lý lịch viếng thăm: trạng thái (đã hủy, chưa thực hiện, đã thực hiện), giao việc, việc của tôi, ngày bắt đầu, ngày kết thúc, nhà phân phối, mục đích viếng thăm, danh sách khách mời, mô tả, người tạo, khách mời từ chối, danh sách công việc, thời gian thực hiện (sáng, trưa, chiều)
+* ngày bắt đầu, ngày kết thúc => ngày thực hiện: có thể chọn nhiều ngày
+* giao việc:
+* việc của tôi: 
+* danh sách khách mời (người có tài khoản trong hệ thống):
+* danh sách công việc: 
+* giao việc (công việc mới): tiêu đề, người tạo (+ file ảnh), người thực hiện (+ file ảnh), người báo cáo, mô tả, ngày bắt đầu, ngày kết thúc, trạng thái(mới, đang thực hiện, đã hoàn thành, đã đóng), bình luận
+* bình luận:
+* quản lý người dùng: họ tên, email, chức vụ, khu vực, người báo cáo

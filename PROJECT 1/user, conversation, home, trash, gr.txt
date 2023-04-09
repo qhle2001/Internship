@@ -1,0 +1,8 @@
+user, conversation, home, trash, group, settings, audio
+table user: id_user, username, password, name, fullname, dateofbirth, location
+table group: id_group, grname, description, location, createdate, createtime
+table conversation: id_conv, convname, id_group, convtimes, convdate, duration, location, details (content), record
+audio: id_audio, name, datetime, duration, 
+filter: allconv, myconv, trashconv
+
+
