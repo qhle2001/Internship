@@ -8,15 +8,58 @@ quản lý các bài viết nổi bật từ hệ thống cms
 quản lý danh sách người dùng trong hệ thống
 quản lý các cấu hình và phân quyền sử dụng cho người dùng
 quản lý danh sách vùng và danh xách nhà phần phối trong hệ thống
-* đăng nhập: tên đăng nhập (email), mật khẩu
-* người dùng: tên, vai trò, vùng, ngày tham gia
-* hệ thống: lịch viếng thăm, công việc, thông báo, thông tin người dùng
+* xác thực tài khoản người dùng
+	đăng nhập: tên đăng nhập (email), mật khẩu
+	người dùng: tên, vai trò, vùng, ngày tham gia
+	hệ thống: lịch viếng thăm, công việc, thông báo, thông tin người dùng
 * quản lý lịch viếng thăm: trạng thái (đã hủy, chưa thực hiện, đã thực hiện), giao việc, việc của tôi, ngày bắt đầu, ngày kết thúc, nhà phân phối, mục đích viếng thăm, danh sách khách mời, mô tả, người tạo, khách mời từ chối, danh sách công việc, thời gian thực hiện (sáng, trưa, chiều)
-* ngày bắt đầu, ngày kết thúc => ngày thực hiện: có thể chọn nhiều ngày
-* giao việc:
-* việc của tôi: 
-* danh sách khách mời (người có tài khoản trong hệ thống):
-* danh sách công việc: 
-* giao việc (công việc mới): tiêu đề, người tạo (+ file ảnh), người thực hiện (+ file ảnh), người báo cáo, mô tả, ngày bắt đầu, ngày kết thúc, trạng thái(mới, đang thực hiện, đã hoàn thành, đã đóng), bình luận
-* bình luận:
-* quản lý người dùng: họ tên, email, chức vụ, khu vực, người báo cáo
+	quản lý danh sách lịch viếng thăm: 
+	chi tiết lịch viếng thăm: mô tả, người tạo, kahchs mời từ chối, danh sách công việc
+	tạo công việc cho lịch viếng thăm: tiêu đề, người tạo (+ file ảnh), người thực hiện (+ file ảnh), người báo cáo, mô tả, ngày tạo, ngày bắt đầu, ngày kết thúc, trạng thái(mới, đang thực hiện, đã hoàn thành, đã đóng), bình luận
+		danh sách ngày thực hiện
+		bình luận:
+	đặt lịch viếng thăm: thời gian, nhà phân phối, mục đích viếng thăm, khách mời
+		danh sách khách mời (người có tài khoản trong hệ thống)
+	* ngày bắt đầu, ngày kết thúc => ngày thực hiện: có thể chọn nhiều ngày
+	* giao việc:
+	* việc của tôi: 
+	* danh sách khách mời (người có tài khoản trong hệ thống):
+	* danh sách công việc: 
+	* giao việc (công việc mới): tiêu đề, người tạo (+ file ảnh), người thực hiện (+ file ảnh), người báo cáo, mô tả, ngày bắt đầu, ngày kết thúc, trạng thái(mới, đang thực hiện, đã hoàn thành, đã đóng), bình luận
+	* bình luận:
+* quản lý người dùng (nhân viên): họ tên, email, chức vụ, khu vực, người báo cáo, số đt, quản lý trực tiếp, cấp dưới, nhà phân phối được quản lý, trạng thái, quyền truy cập,
+	quyền truy cập:
+		system configuration: edit sustem configuration
+		distributors: create new distributor, update detail distributor, delete 	distributor
+		areas: create new area, update area detail, delete areas
+		cms: create new article, update article detail, publish existing article, 	remove unpublish articles, view article
+		survey: create new survey, send survey request
+		notification: create notification
+* quản lý vùng/khu vực: mã vùng/khu vực (key), tên  vùng/khu vực (key), số lượng nhà phân phối
+	nhân viên: tên sale, email, chức vụ, trạng thái, địa chỉ, số đt, người quản lý/sales, cấp dưới, nhà phân phối
+		cấp dưới: danh sách
+		nhà phân phối: danh sách
+	nhà phân phối, tên, email, địa chỉ, số đt, sales management, sales, trạng thái
+		danh sách sales
+* quản lý chức vụ/vai trò người dùng: tên chức vụ, nhóm chức vụ, ngày tạo
+	danh sách nhóm chức vụ
+	danh sách tên chức vụ: tên chức vụ, ngày tạo, thuộc nhóm chức vụ nào
+* quản lý video/ hình ảnh: 
+* quản lý bài viết: tiêu đề, đường dẫn, mô tả, người tạo, ngày tạo, trạng thái (xuất bản, không xuất bản, hình ảnh
+	đăng bài viết: áp dụng cho trạng thái không xuất bản -> update form disabledarticles to publishsedarticles
+	gỡ bài viết: áp dụng cho trạng thái xuất bản -> update form publisharticles to disabledarticles 
+* quản lý bài khảo sát: tiêu đề, người tạo, số câu hỏi, trạng thái (hoạt động, không hoạt động), ngày tạo
+	kích hoạt bài khảo sát để sử dụng: áp dụng cho trạng thái không hoạt động -> update
+	khóa-không kích hoạt bài khảo sát: áp dụng cho trạng thái hoạt động -> update
+	danh sác câu hỏi: câu hỏi + câu trả lời, nhiều/một lựa chọn, hình ảnh
+* quản lý yêu cầu khảo sát: tiêu đề bài khảo sát, bài khảo sát (ở phần trên), ngày bắt đầu, ngày kết thúc, danh sách người nhận (người thực hiện: họ tên, email, trạng thái)
+* thông báo: được gửi đi từ hệ thống, được gửi đi từ người dùng (bao gồm các chức năng), lời nhắc từ hệ thống
+	tên, từ đâu, thời gian, đã đọc hay chưa
+	chi tiết thông báo: người gửi, người nhận
+	tiêu đề, nội dung, người nhận
+* quản lý tài khoản người dùng: 
+	quản lý công việc: đã hoàn thành, chưa hoàn thành
+		đã hoàn thành: tên, người giao, người thực hiện, ngày bắt đầu, ngày kết thúc
+		chưa hoàn thành: tên, người giao, người thực hiện, ngày bắt đầu, ngày kết thúc
+	chỉnh sửa thông tin cá nhân: họ tên, số đt, địa chỉ
+	đổi mật khẩu
