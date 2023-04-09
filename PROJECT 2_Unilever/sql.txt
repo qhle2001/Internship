@@ -35,11 +35,11 @@ quản lý danh sách vùng và danh xách nhà phần phối trong hệ thống
 		cms: create new article, update article detail, publish existing article, 	remove unpublish articles, view article
 		survey: create new survey, send survey request
 		notification: create notification
-* quản lý vùng/khu vực: mã vùng/khu vực (key), tên  vùng/khu vực (key), số lượng nhà phân phối
+* quản lý vùng/khu vực: mã vùng/khu vực (key), tên  vùng/khu vực (key), địa chỉ, số lượng nhà phân phối
 	nhân viên: tên sale, email, chức vụ, trạng thái, địa chỉ, số đt, người quản lý/sales, cấp dưới, nhà phân phối
 		cấp dưới: danh sách
 		nhà phân phối: danh sách
-	nhà phân phối, tên, email, địa chỉ, số đt, sales management, sales, trạng thái
+			nhà phân phối, tên, email, địa chỉ, số đt, sales management, sales, trạng 				thái
 		danh sách sales
 * quản lý chức vụ/vai trò người dùng: tên chức vụ, nhóm chức vụ, ngày tạo
 	danh sách nhóm chức vụ
